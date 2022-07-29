@@ -1,0 +1,1450 @@
+@prefix : <https://www.tu-braunschweig.de/blb/BatteryPassportOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterm: <https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:> .
+@base <https://www.tu-braunschweig.de/blb/BatteryPassportOntology> .
+
+<https://www.tu-braunschweig.de/blb/BatteryPassportOntology> rdf:type owl:Ontology ;
+                                                              dcterm:abstract "The Battery Passport Ontology is representing sustainability indicator for battery life cycle improvements to enable analyses such as LCA. It is based on the Battery Value Chain Ontology (https://github.com/Battery-Value-Chain-Ontology/ontology) from Lukas Gold and Simon Stier."@en ;
+                                                              dcterm:creator "Maximilian Schiller <m.schiller@tu-braunschweig.de>"@en ;
+                                                              dcterm:description "Battery Passport Ontology: tbc"@en ;
+                                                              dcterm:license """The Battery Passport Ontology is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode"""@en ;
+                                                              dcterm:rights """The Battery Passport Ontology is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode"""@en ;
+                                                              dcterm:title "Battery Passport Ontology"@en ;
+                                                              dcterm:version "Version 1.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:abstract
+dcterm:abstract rdf:type owl:AnnotationProperty .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:creator
+dcterm:creator rdf:type owl:AnnotationProperty .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:description
+dcterm:description rdf:type owl:AnnotationProperty .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:license
+dcterm:license rdf:type owl:AnnotationProperty .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:rights
+dcterm:rights rdf:type owl:AnnotationProperty .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:title
+dcterm:title rdf:type owl:AnnotationProperty .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#dcterm:version
+dcterm:version rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_017f9506_793e_428e_bfbe_ab2960342c7a
+:EMMO_017f9506_793e_428e_bfbe_ab2960342c7a rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ;
+                                           rdfs:range :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "hasNotIntendedInput"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd
+:EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ;
+                                           rdfs:range :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "hasOutput"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7
+:EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ;
+                                           rdfs:range :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "hasInput"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832
+:EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 rdf:type owl:ObjectProperty ,
+                                                    owl:SymmetricProperty ;
+                                           rdfs:domain :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:range :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "hasPart"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19
+:EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ;
+                                           rdfs:range :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "hasNotIntendedOutput"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5
+:EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:range :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ;
+                                           rdfs:label "hasImpactOn"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a
+:EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a rdf:type owl:ObjectProperty ,
+                                                    owl:SymmetricProperty ;
+                                           rdfs:domain :EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 ;
+                                           rdfs:range :EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 ;
+                                           rdfs:label "hasPredecessor"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_02680187_c53a_40e1_a44a_1f16e527fb52
+:EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ;
+                                           rdfs:range xsd:double ;
+                                           rdfs:label "SustainabilityIndicatorValue"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1177c4eb_2a73_4d8d_b8d3_2f1526a1d35b
+:EMMO_1177c4eb_2a73_4d8d_b8d3_2f1526a1d35b rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf :EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8 ;
+                                           rdfs:domain :EMMO_7b57cc16_7715_45ce_9c88_57d3073e4ded ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "StakeholderSector"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1e56e168_49c7_4996_8bf9_dda779237714
+:EMMO_1e56e168_49c7_4996_8bf9_dda779237714 rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:range xsd:integer ;
+                                           rdfs:label "ProductID"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_38f27c2a_00d2_40fe_9e7d_9c98b8d51c84
+:EMMO_38f27c2a_00d2_40fe_9e7d_9c98b8d51c84 rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:range xsd:double ;
+                                           rdfs:label "ProductValue"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_393e58d8_72ea_42d9_b1dd_eb477c3a99e4
+:EMMO_393e58d8_72ea_42d9_b1dd_eb477c3a99e4 rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "ValueChainPhase"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8
+:EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8 rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_0550cb32_f2ee_4d94_bcfb_f260776b1f1d ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "StakeholderData"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_6043867e_7a81_4e19_a709_555cd89f97ae
+:EMMO_6043867e_7a81_4e19_a709_555cd89f97ae rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf :EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8 ;
+                                           rdfs:domain :EMMO_4b1a9781_ee6e_45bd_b4e1_42d793220aa9 ;
+                                           rdfs:range xsd:integer ;
+                                           rdfs:label "StakeholderID"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_d708f385_0447_4b0a_b879_2a86c9453e26
+:EMMO_d708f385_0447_4b0a_b879_2a86c9453e26 rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf :EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8 ;
+                                           rdfs:domain :EMMO_3da998d8_c0aa_4c38_9838_665e03fc8e94 ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "StakeholderLocation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e0af5f56_c1ae_46b0_a8aa_e3193aab3561
+:EMMO_e0af5f56_c1ae_46b0_a8aa_e3193aab3561 rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:range xsd:dateTimeStamp ;
+                                           rdfs:label "DateAndTime"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_f4d2abab_45e1_4938_929d_a6401c2c92b5
+:EMMO_f4d2abab_45e1_4938_929d_a6401c2c92b5 rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf :EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8 ;
+                                           rdfs:domain :EMMO_4411508c_6eee_4ec4_9ef7_b115df4098c2 ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "StakeholderName"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_fa536563_9ae8_47ba_b054_7ab88628ad50
+:EMMO_fa536563_9ae8_47ba_b054_7ab88628ad50 rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf :EMMO_59e9650e_e1d7_450a_bdc4_16ba385ce7c8 ;
+                                           rdfs:domain :EMMO_48a58984_ce2b_4f8a_9deb_9d9b2c2b69de ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "StakeholderLegalStructure"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_fdb1238c_9962_4758_b1df_9f8ff118741e
+:EMMO_fdb1238c_9962_4758_b1df_9f8ff118741e rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ;
+                                           rdfs:range xsd:double ;
+                                           rdfs:label "ProcessValue"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_00af3dd5_e21b_4767_b197_30acb7e02760
+:EMMO_00af3dd5_e21b_4767_b197_30acb7e02760 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2cf1c041_1174_4032_a3cd_ad57908294d3 ;
+                                           rdfs:label "CurrentCollector"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_01d4c388_3350_4111_a959_d36fb6a16766
+:EMMO_01d4c388_3350_4111_a959_d36fb6a16766 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_0550cb32_f2ee_4d94_bcfb_f260776b1f1d ;
+                                           rdfs:label "SpecificInformation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_0550cb32_f2ee_4d94_bcfb_f260776b1f1d
+:EMMO_0550cb32_f2ee_4d94_bcfb_f260776b1f1d rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_2dc140fd_fe63_4247_88f1_d632e3ba4f25
+                                                           ] ;
+                                           rdfs:label "StakeholderInformation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_05743815_6a47_456d_bbf1_1b8e09a0f802
+:EMMO_05743815_6a47_456d_bbf1_1b8e09a0f802 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "NitrousOxide"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_06c3738b_4b40_4c3d_afba_dc70a595dab7
+:EMMO_06c3738b_4b40_4c3d_afba_dc70a595dab7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_ae3d2811_21fe_40ca_8802_0d068de8be29 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "ProductionYield"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_06daf00f_fc47_4219_aa89_52b948f319f2
+:EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 rdf:type owl:Class ;
+                                           rdfs:label "BatteryValueChain"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_06e69aaf_fe74_4100_ba3a_5bf481f003e9
+:EMMO_06e69aaf_fe74_4100_ba3a_5bf481f003e9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_1ea9b205_2deb_4c31_a507_72c23c436773
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd ;
+                                                             owl:someValuesFrom :EMMO_6386c6b4_4152_4253_9898_694924679ae2
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_3a524785_0293_4009_93df_678ff55e6754
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_441a267d_51df_483a_9d44_caa1c8341b10
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119
+                                                           ] ;
+                                           rdfs:label "BatteryApplication"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+:EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174
+                                                           ] ;
+                                           rdfs:label "SocialIndicator"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_0c7ad69e_2c94_496e_a890_a98b393a2a88
+:EMMO_0c7ad69e_2c94_496e_a890_a98b393a2a88 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_821fcc6e_4ff4_4bbd_9639_4c1c8b2453a9 ;
+                                           rdfs:label "BatteryPackAssembly"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_10920d6d_4ed6_40b2_8594_4bc3209941f3
+:EMMO_10920d6d_4ed6_40b2_8594_4bc3209941f3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_1ea9b205_2deb_4c31_a507_72c23c436773
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd ;
+                                                             owl:someValuesFrom :EMMO_8404bc73_2c29_4e79_975e_dab85b09515e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_3a524785_0293_4009_93df_678ff55e6754
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_6386c6b4_4152_4253_9898_694924679ae2
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_d091e4c1_f25c_4e98_a5f1_6b6737615514
+                                                           ] ;
+                                           rdfs:label "BatteryRecycling"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2
+:EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 rdf:type owl:Class ;
+                                           rdfs:label "Product"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_197c7b69_680f_4eb6_a09b_8858f4651b34
+:EMMO_197c7b69_680f_4eb6_a09b_8858f4651b34 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "BatteryRawMaterialDeposit"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_19d36709_80af_45e5_a407_499f3ee26823
+:EMMO_19d36709_80af_45e5_a407_499f3ee26823 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1c5c0218_a052_44d5_8c0e_04ea970884ec ;
+                                           rdfs:label "CathodeActiveMaterial"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1a66e999_e045_4d0c_aed8_20e6b5c8047b
+:EMMO_1a66e999_e045_4d0c_aed8_20e6b5c8047b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_470752df_b076_432a_9493_547517321f8f ;
+                                           rdfs:label "AnodeCollector"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1b0c19dd_9e28_4857_b2b9_1c5fd149cf59
+:EMMO_1b0c19dd_9e28_4857_b2b9_1c5fd149cf59 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Cobalt"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1c5c0218_a052_44d5_8c0e_04ea970884ec
+:EMMO_1c5c0218_a052_44d5_8c0e_04ea970884ec rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_89adbcf3_ed67_4564_a0f4_57f1f26e4cdb ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Cathode"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_1ea9b205_2deb_4c31_a507_72c23c436773
+:EMMO_1ea9b205_2deb_4c31_a507_72c23c436773 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 ;
+                                           rdfs:label "Transport"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_22cb9d47_328e_4269_bffc_33adfb9d648e
+:EMMO_22cb9d47_328e_4269_bffc_33adfb9d648e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_9d4e9c05_0408_4e82_be30_abecd433e22b
+                                                           ] ;
+                                           rdfs:label "CollectorCoating"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_245a1939_aca4_4d43_aec8_a5b281095ca6
+:EMMO_245a1939_aca4_4d43_aec8_a5b281095ca6 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Lithium"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_24e35c89_cb41_4b01_917c_50bdf1d3553e
+:EMMO_24e35c89_cb41_4b01_917c_50bdf1d3553e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_986019f8_76a2_4624_9f47_7065556be201 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "StateOfCharge"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_26114b6f_f9e6_4fee_bc05_d679697c3b00
+:EMMO_26114b6f_f9e6_4fee_bc05_d679697c3b00 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_89ec3df3_0551_414f_a78f_778b5d4b105e
+                                                           ] ;
+                                           rdfs:label "ElectrodeCalendering"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_295cfe2d_5c07_4872_b067_0f7e3c4698e1
+:EMMO_295cfe2d_5c07_4872_b067_0f7e3c4698e1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_ba2ecd1d_364b_4f6b_8656_58fb0560faf6
+                                                           ] ;
+                                           rdfs:label "ElectrodeContacting"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_29d082c3_e098_48bf_8547_3746f18ec7a9
+:EMMO_29d082c3_e098_48bf_8547_3746f18ec7a9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_aa3dcf8c_44b0_410a_a3e7_b507edf0944d ;
+                                           rdfs:label "GalvanicFullCell"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2c0cedb1_a819_4583_aadf_8798c7889aa1
+:EMMO_2c0cedb1_a819_4583_aadf_8798c7889aa1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1c5c0218_a052_44d5_8c0e_04ea970884ec ;
+                                           rdfs:label "CathodeCollector"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2c2ca662_3136_4692_a45b_a2431073ba29
+:EMMO_2c2ca662_3136_4692_a45b_a2431073ba29 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_ff62cfc1_8c99_48f3_9e0e_ae0b3c539385 ;
+                                           rdfs:label "ModuleAssembly"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2cf1c041_1174_4032_a3cd_ad57908294d3
+:EMMO_2cf1c041_1174_4032_a3cd_ad57908294d3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_aa3dcf8c_44b0_410a_a3e7_b507edf0944d ;
+                                           rdfs:label "GalvanicHalfCell"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2d8dc93f_8712_4b35_abca_ed7453a39738
+:EMMO_2d8dc93f_8712_4b35_abca_ed7453a39738 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e4e001bf_cb66_4187_b22b_f42b3ce1e477 ;
+                                           rdfs:label "Airplane"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2dc140fd_fe63_4247_88f1_d632e3ba4f25
+:EMMO_2dc140fd_fe63_4247_88f1_d632e3ba4f25 rdf:type owl:Class ;
+                                           rdfs:label "ImpactAssessment"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_2fd08936_a7f4_4e8e_a199_d9608bb64d54
+:EMMO_2fd08936_a7f4_4e8e_a199_d9608bb64d54 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "ScrapRate"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_30dbe559_0efc_481c_9db7_243e0340d980
+:EMMO_30dbe559_0efc_481c_9db7_243e0340d980 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 ;
+                                           rdfs:label "ElectrodeCutting"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_32c316f4_d112_4596_8ad4_d44a116b6a68
+:EMMO_32c316f4_d112_4596_8ad4_d44a116b6a68 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a524785_0293_4009_93df_678ff55e6754 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "EnergyUsage"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719
+:EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_818eb338_d38f_4250_9394_f4fb590b285c ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7
+                                                           ] ;
+                                           rdfs:label "CellProduction"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_3a524785_0293_4009_93df_678ff55e6754
+:EMMO_3a524785_0293_4009_93df_678ff55e6754 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 ;
+                                           rdfs:label "Energy"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec
+:EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_0550cb32_f2ee_4d94_bcfb_f260776b1f1d ;
+                                           rdfs:label "GeneralInformation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_3d78ced6_dc01_47b6_873b_710a067e7c15
+:EMMO_3d78ced6_dc01_47b6_873b_710a067e7c15 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_8404bc73_2c29_4e79_975e_dab85b09515e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "RecycledBatteryMaterial"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_3da998d8_c0aa_4c38_9838_665e03fc8e94
+:EMMO_3da998d8_c0aa_4c38_9838_665e03fc8e94 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec ;
+                                           rdfs:label "Headquarter"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_403d3293_d5a7_4506_90d3_a0effa04b029
+:EMMO_403d3293_d5a7_4506_90d3_a0effa04b029 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_9587dd9d_2155_4e1d_8b6a_fe07799620bc ;
+                                           rdfs:label "NaturalResources"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_4411508c_6eee_4ec4_9ef7_b115df4098c2
+:EMMO_4411508c_6eee_4ec4_9ef7_b115df4098c2 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec ;
+                                           rdfs:label "Name"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_441a267d_51df_483a_9d44_caa1c8341b10
+:EMMO_441a267d_51df_483a_9d44_caa1c8341b10 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "ElectricBattery"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_470752df_b076_432a_9493_547517321f8f
+:EMMO_470752df_b076_432a_9493_547517321f8f rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_89adbcf3_ed67_4564_a0f4_57f1f26e4cdb ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Anode"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_485c45d7_eb7b_4bce_ba14_9b483c9942d7
+:EMMO_485c45d7_eb7b_4bce_ba14_9b483c9942d7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7 ;
+                                           rdfs:label "InitialCellQualityControl"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_48a58984_ce2b_4f8a_9deb_9d9b2c2b69de
+:EMMO_48a58984_ce2b_4f8a_9deb_9d9b2c2b69de rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec ;
+                                           rdfs:label "LegalStructure"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_4a3853f6_c2c5_48bd_8244_b6260287ad38
+:EMMO_4a3853f6_c2c5_48bd_8244_b6260287ad38 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fbe8da29_646c_41fb_a4ca_ad49fc31030e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "BatteryManagementSystem"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_4b1a9781_ee6e_45bd_b4e1_42d793220aa9
+:EMMO_4b1a9781_ee6e_45bd_b4e1_42d793220aa9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec ;
+                                           rdfs:label "UniqueStakeholderIdentifier"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_5a9f7c84_ce86_4225_92ad_10727f78376b
+:EMMO_5a9f7c84_ce86_4225_92ad_10727f78376b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_986019f8_76a2_4624_9f47_7065556be201 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "LifeTime"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+:EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174
+                                                           ] ;
+                                           rdfs:label "EconomicIndicator"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_5d81fbd2_e72d_4ee7_bd5c_2891f428d8c8
+:EMMO_5d81fbd2_e72d_4ee7_bd5c_2891f428d8c8 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_470752df_b076_432a_9493_547517321f8f ;
+                                           rdfs:label "AnodeActiveMaterial"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_5e5fd1ef_2a1a_4311_ad92_9dd5801b1134
+:EMMO_5e5fd1ef_2a1a_4311_ad92_9dd5801b1134 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e3174b23_fcef_4e00_b70f_a799d20ef6ba ;
+                                           rdfs:label "EnclosureInstallation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_5e8645c0_e264_476d_a202_2dd925c42908
+:EMMO_5e8645c0_e264_476d_a202_2dd925c42908 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_441a267d_51df_483a_9d44_caa1c8341b10 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_f1923465_d672_475c_a9f8_123cfe59f698
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "BatteryModule"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_6386c6b4_4152_4253_9898_694924679ae2
+:EMMO_6386c6b4_4152_4253_9898_694924679ae2 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "SpentElectricBattery"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_654a7492_4b08_4a23_bcdd_61b39eee773e
+:EMMO_654a7492_4b08_4a23_bcdd_61b39eee773e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_295cfe2d_5c07_4872_b067_0f7e3c4698e1
+                                                           ] ;
+                                           rdfs:label "CellHousing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_65d1f015_66dc_480b_a2cd_f91cbf2d10f1
+:EMMO_65d1f015_66dc_480b_a2cd_f91cbf2d10f1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_29d082c3_e098_48bf_8547_3746f18ec7a9 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Separator"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_66b1c16a_102c_4e53_b3d9_d8e974b12ac9
+:EMMO_66b1c16a_102c_4e53_b3d9_d8e974b12ac9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_654a7492_4b08_4a23_bcdd_61b39eee773e
+                                                           ] ;
+                                           rdfs:label "ElectrolyteFilling"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_69354d10_e621_47ef_96f8_1072e8d18cfd
+:EMMO_69354d10_e621_47ef_96f8_1072e8d18cfd rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "NotUsedMaterials"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_6a0d6ec6_9cf2_471f_b804_8ffe42397eff
+:EMMO_6a0d6ec6_9cf2_471f_b804_8ffe42397eff rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_8404bc73_2c29_4e79_975e_dab85b09515e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "NotRecycledBatteryMaterial"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_6a8249e0_88e7_4dee_b3f8_14231dcf24aa
+:EMMO_6a8249e0_88e7_4dee_b3f8_14231dcf24aa rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_26114b6f_f9e6_4fee_bc05_d679697c3b00
+                                                           ] ;
+                                           rdfs:label "ElectrodeSlitting"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_6d7fc0af_a8c9_4cd1_836f_f46821dce1d0
+:EMMO_6d7fc0af_a8c9_4cd1_836f_f46821dce1d0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2cf1c041_1174_4032_a3cd_ad57908294d3 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Electrolyte"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_6d905260_67d0_40ba_8371_a37963311fc0
+:EMMO_6d905260_67d0_40ba_8371_a37963311fc0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_66b1c16a_102c_4e53_b3d9_d8e974b12ac9
+                                                           ] ;
+                                           rdfs:label "FinalCellSealing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_72c2cc55_4dbd_4a81_a489_4216d0bea914
+:EMMO_72c2cc55_4dbd_4a81_a489_4216d0bea914 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "CarbonDioxide"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7
+:EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_818eb338_d38f_4250_9394_f4fb590b285c ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719
+                                                           ] ;
+                                           rdfs:label "CellConditioning"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_78781365_b795_4da9_97b3_83c0844060b3
+:EMMO_78781365_b795_4da9_97b3_83c0844060b3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_97509eec_782f_482a_a82e_c4c1a080a0d6
+                                                           ] ;
+                                           rdfs:label "FinalCellQualityControl"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_7b57cc16_7715_45ce_9c88_57d3073e4ded
+:EMMO_7b57cc16_7715_45ce_9c88_57d3073e4ded rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3ca175d5_2fa2_459e_9ef9_bceb5f198fec ;
+                                           rdfs:label "Sector"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_8089b203_e98b_463b_b2bf_f9e8d2351e63
+:EMMO_8089b203_e98b_463b_b2bf_f9e8d2351e63 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_1ea9b205_2deb_4c31_a507_72c23c436773
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_403d3293_d5a7_4506_90d3_a0effa04b029
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd ;
+                                                             owl:someValuesFrom :EMMO_8404bc73_2c29_4e79_975e_dab85b09515e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_3a524785_0293_4009_93df_678ff55e6754
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ;
+                                           rdfs:label "BatteryRawMaterialRefining"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_818eb338_d38f_4250_9394_f4fb590b285c
+:EMMO_818eb338_d38f_4250_9394_f4fb590b285c rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 ;
+                                           rdfs:label "BatteryCellManufacturing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_821fcc6e_4ff4_4bbd_9639_4c1c8b2453a9
+:EMMO_821fcc6e_4ff4_4bbd_9639_4c1c8b2453a9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_ff62cfc1_8c99_48f3_9e0e_ae0b3c539385
+                                                           ] ;
+                                           rdfs:label "BatteryPackManufacturing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_83338550_f911_49ac_8697_a47d5fced85a
+:EMMO_83338550_f911_49ac_8697_a47d5fced85a rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_986019f8_76a2_4624_9f47_7065556be201 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "StateOfHealth"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_83d5ff6f_3ddf_46e7_b811_40b2ccabbf96
+:EMMO_83d5ff6f_3ddf_46e7_b811_40b2ccabbf96 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "SulfurOxide"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_8404bc73_2c29_4e79_975e_dab85b09515e
+:EMMO_8404bc73_2c29_4e79_975e_dab85b09515e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ,
+                                                           :EMMO_9587dd9d_2155_4e1d_8b6a_fe07799620bc ;
+                                           rdfs:label "RefinedBatteryMaterial"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_86bc4abb_886c_4caa_b781_278c9fe3635b
+:EMMO_86bc4abb_886c_4caa_b781_278c9fe3635b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_821fcc6e_4ff4_4bbd_9639_4c1c8b2453a9 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_ef3b6081_4c80_40b1_8dfa_356286964051
+                                                           ] ;
+                                           rdfs:label "BatteryCoolingIntegration"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_89adbcf3_ed67_4564_a0f4_57f1f26e4cdb
+:EMMO_89adbcf3_ed67_4564_a0f4_57f1f26e4cdb rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2cf1c041_1174_4032_a3cd_ad57908294d3 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Electrode"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_89ec3df3_0551_414f_a78f_778b5d4b105e
+:EMMO_89ec3df3_0551_414f_a78f_778b5d4b105e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_22cb9d47_328e_4269_bffc_33adfb9d648e
+                                                           ] ;
+                                           rdfs:label "ElectrodeDrying"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_8b13a0a8_ebc5_40b5_a616_b69343d1fb08
+:EMMO_8b13a0a8_ebc5_40b5_a616_b69343d1fb08 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_403d3293_d5a7_4506_90d3_a0effa04b029 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Water"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_929a6684_25d6_40b5_9337_e3a1498c1174
+:EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ;
+                                           rdfs:label "EcologicalIndicator"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_93691dd2_98e2_41de_b7e7_15da5e079aa3
+:EMMO_93691dd2_98e2_41de_b7e7_15da5e079aa3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "NitrogenOxide"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_9587dd9d_2155_4e1d_8b6a_fe07799620bc
+:EMMO_9587dd9d_2155_4e1d_8b6a_fe07799620bc rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 ;
+                                           rdfs:label "MaterialsAndSubstances"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_97509eec_782f_482a_a82e_c4c1a080a0d6
+:EMMO_97509eec_782f_482a_a82e_c4c1a080a0d6 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_b2fe9c1b_cc23_4b10_94b7_a417a499f375
+                                                           ] ;
+                                           rdfs:label "CellAging"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_986019f8_76a2_4624_9f47_7065556be201
+:EMMO_986019f8_76a2_4624_9f47_7065556be201 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174
+                                                           ] ;
+                                           rdfs:label "BatteryIndicator"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_9c4d2c2c_74f2_4562_852d_13577999c5e7
+:EMMO_9c4d2c2c_74f2_4562_852d_13577999c5e7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Corruption"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_9d4e9c05_0408_4e82_be30_abecd433e22b
+:EMMO_9d4e9c05_0408_4e82_be30_abecd433e22b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 ;
+                                           rdfs:label "SlurryMixing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_9e01d0fe_8a31_4cdd_bf56_b0e6c8fccc4c
+:EMMO_9e01d0fe_8a31_4cdd_bf56_b0e6c8fccc4c rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_06e69aaf_fe74_4100_ba3a_5bf481f003e9 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_986019f8_76a2_4624_9f47_7065556be201
+                                                           ] ;
+                                           rdfs:label "DiagnosticsAndMaintenance"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_9e0a8609_38e9_4a9e_9712_1ada790dd876
+:EMMO_9e0a8609_38e9_4a9e_9712_1ada790dd876 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_ae3d2811_21fe_40ca_8802_0d068de8be29 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "RawMaterialYield"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_9f97eaf8_537d_4267_b5ec_4bd88a5a04e1
+:EMMO_9f97eaf8_537d_4267_b5ec_4bd88a5a04e1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "ParticulateMatter10"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_a0852dee_c2f3_4641_b795_f864f7b66cf8
+:EMMO_a0852dee_c2f3_4641_b795_f864f7b66cf8 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_403d3293_d5a7_4506_90d3_a0effa04b029 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Land"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_a4aec38c_9521_46a4_a94f_cebd236db536
+:EMMO_a4aec38c_9521_46a4_a94f_cebd236db536 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_bfece923_a677_4a3c_9553_3f963269804a ;
+                                           rdfs:label "GlobalWarmingPotential"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3
+:EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_1ea9b205_2deb_4c31_a507_72c23c436773
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_403d3293_d5a7_4506_90d3_a0effa04b029
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd ;
+                                                             owl:someValuesFrom :EMMO_441a267d_51df_483a_9d44_caa1c8341b10
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_3a524785_0293_4009_93df_678ff55e6754
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_8404bc73_2c29_4e79_975e_dab85b09515e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ;
+                                           rdfs:label "BatteryManufacturing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_a8e97a4e_f21b_4370_afde_122ec0cae3e3
+:EMMO_a8e97a4e_f21b_4370_afde_122ec0cae3e3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e4e001bf_cb66_4187_b22b_f42b3ce1e477 ;
+                                           rdfs:label "Truck"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_aa3dcf8c_44b0_410a_a3e7_b507edf0944d
+:EMMO_aa3dcf8c_44b0_410a_a3e7_b507edf0944d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f1923465_d672_475c_a9f8_123cfe59f698 ;
+                                           rdfs:label "GalvanicCell"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_aaacff85_550e_4ccb_904a_0ee091580391
+:EMMO_aaacff85_550e_4ccb_904a_0ee091580391 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e4e001bf_cb66_4187_b22b_f42b3ce1e477 ;
+                                           rdfs:label "Train"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_ada6ea3f_7d64_4be1_988e_c1b2726d63d9
+:EMMO_ada6ea3f_7d64_4be1_988e_c1b2726d63d9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Graphite"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_ae3d2811_21fe_40ca_8802_0d068de8be29
+:EMMO_ae3d2811_21fe_40ca_8802_0d068de8be29 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e ;
+                                           rdfs:label "Yield"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_b2fe9c1b_cc23_4b10_94b7_a417a499f375
+:EMMO_b2fe9c1b_cc23_4b10_94b7_a417a499f375 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_485c45d7_eb7b_4bce_ba14_9b483c9942d7
+                                                           ] ;
+                                           rdfs:label "CellFormation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_b3d521ae_5822_4096_874f_398c92a90794
+:EMMO_b3d521ae_5822_4096_874f_398c92a90794 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_441a267d_51df_483a_9d44_caa1c8341b10 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_5e8645c0_e264_476d_a202_2dd925c42908
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "BatteryPack"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_b855f3de_159e_4617_94cd_b5df800068de
+:EMMO_b855f3de_159e_4617_94cd_b5df800068de rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "ChildLabor"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_b98f427d_ff35_4a50_b2dd_4c501d70739a
+:EMMO_b98f427d_ff35_4a50_b2dd_4c501d70739a rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a524785_0293_4009_93df_678ff55e6754 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "EnergyMIx"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_ba2ecd1d_364b_4f6b_8656_58fb0560faf6
+:EMMO_ba2ecd1d_364b_4f6b_8656_58fb0560faf6 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3a11c92b_b9de_4ef6_a4cd_355c03441719 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_30dbe559_0efc_481c_9db7_243e0340d980
+                                                           ] ;
+                                           rdfs:label "ElectrodePackaging"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_bc8e8e4b_18c2_4ba2_bf18_d6ee75dbb483
+:EMMO_bc8e8e4b_18c2_4ba2_bf18_d6ee75dbb483 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1ea9b205_2deb_4c31_a507_72c23c436773 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Distance"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_be62d74b_f1f6_4355_beae_ec69bc328abd
+:EMMO_be62d74b_f1f6_4355_beae_ec69bc328abd rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e3174b23_fcef_4e00_b70f_a799d20ef6ba ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_5e5fd1ef_2a1a_4311_ad92_9dd5801b1134
+                                                           ] ;
+                                           rdfs:label "PowerConnectionInstallation"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_bfece923_a677_4a3c_9553_3f963269804a
+:EMMO_bfece923_a677_4a3c_9553_3f963269804a rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_2dc140fd_fe63_4247_88f1_d632e3ba4f25
+                                                           ] ;
+                                           rdfs:label "Reference"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_c89d58ff_6b81_4ff5_8de3_e26274261e4c
+:EMMO_c89d58ff_6b81_4ff5_8de3_e26274261e4c rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_6a8249e0_88e7_4dee_b3f8_14231dcf24aa
+                                                           ] ;
+                                           rdfs:label "ElectrodeFinalDrying"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7
+:EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2 ;
+                                           rdfs:label "BatteryRawMaterial"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_d091e4c1_f25c_4e98_a5f1_6b6737615514
+:EMMO_d091e4c1_f25c_4e98_a5f1_6b6737615514 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "RecyclingRates"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_d2eab44f_ebb9_4bbf_bc5f_8b5e2c12cfec
+:EMMO_d2eab44f_ebb9_4bbf_bc5f_8b5e2c12cfec rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "OccupationalToxicsAndHazards"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_d865b0ef_69e5_46e4_b963_1a0727a9f207
+:EMMO_d865b0ef_69e5_46e4_b963_1a0727a9f207 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "LowQualityBatteries"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_d987fd39_9cf0_426a_9401_9982d806323c
+:EMMO_d987fd39_9cf0_426a_9401_9982d806323c rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Manganese"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_da2bcf38_7a61_4cd9_902c_2b13085209ea
+:EMMO_da2bcf38_7a61_4cd9_902c_2b13085209ea rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_76b4529c_b81b_4cd6_bf11_f6f5d2a56fc7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_78781365_b795_4da9_97b3_83c0844060b3
+                                                           ] ;
+                                           rdfs:label "CellQualitySorting"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_dba48919_6112_4986_9178_0ac0f47d4365
+:EMMO_dba48919_6112_4986_9178_0ac0f47d4365 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Ammonium"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_de4a4de3_8cf1_4a82_81c2_b88b9f8dbb21
+:EMMO_de4a4de3_8cf1_4a82_81c2_b88b9f8dbb21 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Nickel"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e18ab96f_3d3c_410a_aacb_e7a8023036ea
+:EMMO_e18ab96f_3d3c_410a_aacb_e7a8023036ea rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_017f9506_793e_428e_bfbe_ab2960342c7a ;
+                                                             owl:someValuesFrom :EMMO_403d3293_d5a7_4506_90d3_a0effa04b029
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1ddb0d65_36f5_4bf4_a3d2_b4bcefd4d9cd ;
+                                                             owl:someValuesFrom :EMMO_c8c6e71a_8a05_4a1c_a253_34c9959ebcf7
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_197c7b69_680f_4eb6_a09b_8858f4651b34
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_2d3f8af0_2502_4133_a4f9_86f0d17964e7 ;
+                                                             owl:someValuesFrom :EMMO_3a524785_0293_4009_93df_678ff55e6754
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_d6a5c5d0_5c45_41e4_86ad_8fb137540d19 ;
+                                                             owl:someValuesFrom :EMMO_f550c2dd_6827_43e8_8c65_b74e99797119
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_5ce7469e_9339_4f64_b15c_50012f6ab72e
+                                                           ] ;
+                                           rdfs:label "BatteryRawMaterialMining"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e1da53eb_1e3e_4d80_b94e_ec0ee0d2e5a1
+:EMMO_e1da53eb_1e3e_4d80_b94e_ec0ee0d2e5a1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_441a267d_51df_483a_9d44_caa1c8341b10 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Enclosure"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d
+:EMMO_e2916c33_ded2_44be_b71b_7ee4ec16500d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 ;
+                                           rdfs:label "CoProducts"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e3174b23_fcef_4e00_b70f_a799d20ef6ba
+:EMMO_e3174b23_fcef_4e00_b70f_a799d20ef6ba rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_821fcc6e_4ff4_4bbd_9639_4c1c8b2453a9
+                                                           ] ;
+                                           rdfs:label "BatterySystemManufacturing"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e4e001bf_cb66_4187_b22b_f42b3ce1e477
+:EMMO_e4e001bf_cb66_4187_b22b_f42b3ce1e477 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1ea9b205_2deb_4c31_a507_72c23c436773 ;
+                                           rdfs:label "TransportOption"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7
+:EMMO_e99cbc13_a861_48b4_8d21_5bea8fd183e7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_818eb338_d38f_4250_9394_f4fb590b285c ;
+                                           rdfs:label "EletrodeProduction"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_e9a95817_db55_41bc_835b_29e48930a595
+:EMMO_e9a95817_db55_41bc_835b_29e48930a595 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e4e001bf_cb66_4187_b22b_f42b3ce1e477 ;
+                                           rdfs:label "Ship"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_ec729cb0_5ee8_4bbc_9b14_9f16180a81f2
+:EMMO_ec729cb0_5ee8_4bbc_9b14_9f16180a81f2 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_09e1a240_933e_4b14_a57b_4bff1c50feb1 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_02680187_c53a_40e1_a44a_1f16e527fb52 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "Poverty"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_ef3b6081_4c80_40b1_8dfa_356286964051
+:EMMO_ef3b6081_4c80_40b1_8dfa_356286964051 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_821fcc6e_4ff4_4bbd_9639_4c1c8b2453a9 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_0c7ad69e_2c94_496e_a890_a98b393a2a88
+                                                           ] ;
+                                           rdfs:label "BatteryManagementSystemIntegration"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_f0e7d6b0_275b_4a36_aa9d_be802b637921
+:EMMO_f0e7d6b0_275b_4a36_aa9d_be802b637921 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_bfece923_a677_4a3c_9553_3f963269804a ;
+                                           rdfs:label "SocialHotspotDatabase"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_f1923465_d672_475c_a9f8_123cfe59f698
+:EMMO_f1923465_d672_475c_a9f8_123cfe59f698 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5e8645c0_e264_476d_a202_2dd925c42908 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "ElectrochemicalCell"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_f550c2dd_6827_43e8_8c65_b74e99797119
+:EMMO_f550c2dd_6827_43e8_8c65_b74e99797119 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_929a6684_25d6_40b5_9337_e3a1498c1174 ;
+                                           rdfs:label "Emissions"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_fbe8da29_646c_41fb_a4ca_ad49fc31030e
+:EMMO_fbe8da29_646c_41fb_a4ca_ad49fc31030e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_441a267d_51df_483a_9d44_caa1c8341b10 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_517febed_d8c2_48a3_9755_7dd8d1b42832 ;
+                                                             owl:someValuesFrom :EMMO_b3d521ae_5822_4096_874f_398c92a90794
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_1e56e168_49c7_4996_8bf9_dda779237714 ;
+                                                             owl:someValuesFrom xsd:integer
+                                                           ] ;
+                                           rdfs:label "BatterySystem"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60
+:EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60 rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_daeb9803_a765_4d5f_9424_68cc783e8aa5 ;
+                                                             owl:someValuesFrom :EMMO_2dc140fd_fe63_4247_88f1_d632e3ba4f25
+                                                           ] ;
+                                           rdfs:label "SustainabilityIndicator"@en .
+
+
+###  https://www.tu-braunschweig.de/blb/BatteryPassportOntology#EMMO_ff62cfc1_8c99_48f3_9e0e_ae0b3c539385
+:EMMO_ff62cfc1_8c99_48f3_9e0e_ae0b3c539385 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_a5b89b28_6d39_480d_bf09_2439c30d84d3 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_db259d3e_fc7d_4de6_adf4_e80f28c7ff6a ;
+                                                             owl:someValuesFrom :EMMO_818eb338_d38f_4250_9394_f4fb590b285c
+                                                           ] ;
+                                           rdfs:label "BatteryModuleManufacturing"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EMMO_0550cb32_f2ee_4d94_bcfb_f260776b1f1d
+                :EMMO_06daf00f_fc47_4219_aa89_52b948f319f2
+                :EMMO_12b9f68c_2ee6_4a18_957c_0cfcd473cfb2
+                :EMMO_bfece923_a677_4a3c_9553_3f963269804a
+                :EMMO_fe2424da_6182_4d2c_b72e_7cc858416a60
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
